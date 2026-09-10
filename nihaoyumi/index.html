@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你好玉米-玉米知识、品种选购与家常做法指南</title>
+<meta name="description" content="你好玉米是一个围绕玉米的知识与生活指南站点，介绍玉米品种分类、甜玉米与糯玉米的区别、挑选与保存方法、家常做法、营养价值以及常见问题，帮助你更清楚地了解和食用玉米。">
+<meta name="keywords" content="你好玉米,玉米,甜玉米,糯玉米,玉米做法,玉米选购,玉米保存,玉米营养">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --corn-yellow: #f2b705;
+  --corn-deep: #d98e04;
+  --corn-green: #4f7a34;
+  --corn-leaf: #eaf3de;
+  --corn-cream: #fffaf0;
+  --text-main: #33301f;
+  --text-soft: #6c6754;
+  --line: #e6e0cf;
+  --white: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-main);
+  background: var(--corn-cream);
+  line-height: 1.75;
+  font-size: 16px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 顶部提示条 */
+.topbar {
+  background: var(--corn-green);
+  color: #f4f9ec;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.topbar .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.topbar span {
+  opacity: 0.92;
+}
+
+/* 页眉 */
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(150deg, #f7cd3c, #e09a06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #4a3600;
+  box-shadow: 0 6px 16px rgba(224, 154, 6, 0.28);
+}
+.brand-text b {
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: block;
+}
+.brand-text small {
+  font-size: 12px;
+  color: var(--text-soft);
+  letter-spacing: 0.5px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.main-nav a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 15px;
+  color: var(--text-main);
+  transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover,
+.main-nav a.active {
+  background: var(--corn-leaf);
+  color: var(--corn-green);
+}
+
+/* 首屏 */
+.hero {
+  background: linear-gradient(160deg, #fff8e4 0%, #fdf1cf 55%, #f6e8b8 100%);
+  border-bottom: 1px solid var(--line);
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+  padding: 54px 0 58px;
+}
+.hero h1 {
+  font-size: 38px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--corn-deep);
+}
+.hero-lead {
+  font-size: 17px;
+  color: #5c5638;
+  max-width: 560px;
+  margin-bottom: 24px;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.hero-tags span {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #ecdca6;
+  color: #7a6412;
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+  border: 1px solid transparent;
+}
+.btn-primary {
+  background: var(--corn-green);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(79, 122, 52, 0.25);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(79, 122, 52, 0.32);
+}
+.btn-ghost {
+  background: #fff;
+  border-color: #e2d6a8;
+  color: #7a6412;
+}
+.btn-ghost:hover {
+  background: #fffdf3;
+}
+.hero-visual {
+  background: #fff;
+  border: 1px solid #f0e2b6;
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 18px 40px rgba(180, 150, 60, 0.16);
+}
+.hero-visual h3 {
+  font-size: 16px;
+  margin-bottom: 14px;
+  color: var(--corn-green);
+  letter-spacing: 0.5px;
+}
+.kernel-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.kernel-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 14.5px;
+  color: #524d33;
+}
+.kernel-dot {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fdf0c4;
+  color: #a97c05;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 通用区块 */
+.section {
+  padding: 56px 0;
+}
+.section-alt {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.section-head {
+  margin-bottom: 32px;
+}
+.section-head h2 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.section-head p {
+  color: var(--text-soft);
+  font-size: 15px;
+  max-width: 720px;
+}
+.section-head .eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--corn-deep);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* 知识卡片 */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(120, 100, 40, 0.12);
+  border-color: #eadfae;
+}
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+.card p {
+  font-size: 14.5px;
+  color: var(--text-soft);
+}
+.card .tag {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--corn-green);
+  background: var(--corn-leaf);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+/* 品种对比表 */
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(150, 130, 60, 0.1);
+  font-size: 14.5px;
+}
+.compare caption {
+  text-align: left;
+  font-size: 14px;
+  color: var(--text-soft);
+  padding-bottom: 12px;
+}
+.compare th,
+.compare td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.compare thead th {
+  background: #f7f2e0;
+  color: #6a5a12;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.compare tbody tr:last-child td {
+  border-bottom: none;
+}
+.compare tbody tr:nth-child(even) {
+  background: #fffdf6;
+}
+
+/* 做法步骤 */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.step {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  padding: 24px;
+  position: relative;
+}
+.step-no {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--corn-deep);
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.step h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.step p {
+  font-size: 14.5px;
+  color: var(--text-soft);
+}
+.step ul {
+  margin-top: 10px;
+  padding-left: 18px;
+  font-size: 14px;
+  color: var(--text-soft);
+}
+.step ul li {
+  margin-bottom: 4px;
+}
+
+/* 侧栏布局 */
+.split {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 34px;
+  align-items: start;
+}
+.article-block {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px;
+}
+.article-block h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.article-block p {
+  font-size: 15px;
+  color: #4f4a34;
+  margin-bottom: 14px;
+}
+.article-block ul {
+  padding-left: 20px;
+  font-size: 14.5px;
+  color: var(--text-soft);
+}
+.article-block ul li {
+  margin-bottom: 8px;
+}
+.side-box {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 22px;
+}
+.side-box h3 {
+  font-size: 17px;
+  margin-bottom: 14px;
+  color: var(--corn-green);
+}
+.side-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.side-list li {
+  font-size: 14.5px;
+  color: var(--text-soft);
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--line);
+}
+.side-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.side-list b {
+  color: var(--text-main);
+  display: block;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 24px;
+}
+.faq-item h3 {
+  font-size: 16.5px;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.faq-item h3::before {
+  content: "Q";
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background: var(--corn-leaf);
+  color: var(--corn-green);
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.faq-item p {
+  font-size: 14.5px;
+  color: var(--text-soft);
+  padding-left: 34px;
+}
+
+/* 页脚 */
+.site-footer {
+  background: #33301f;
+  color: #cfc9b2;
+  padding: 48px 0 24px;
+  font-size: 14px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.footer-grid h4 {
+  color: #f4e9c6;
+  font-size: 15px;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+.footer-grid p {
+  color: #a9a48c;
+  font-size: 13.5px;
+  line-height: 1.9;
+}
+.footer-grid ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.footer-grid ul li a {
+  color: #b6b098;
+  font-size: 13.5px;
+  transition: color 0.2s;
+}
+.footer-grid ul li a:hover {
+  color: var(--corn-yellow);
+}
+.footer-bottom {
+  padding-top: 18px;
+  font-size: 12.5px;
+  color: #8d8873;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: space-between;
+}
+
+/* 响应式 */
+@media (max-width: 980px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 40px 0 44px;
+    gap: 30px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .grid-3,
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .split {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+  .header-inner {
+    gap: 12px;
+  }
+  .main-nav ul {
+    gap: 2px;
+  }
+  .main-nav a {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 25px;
+  }
+  .hero-lead {
+    font-size: 15.5px;
+  }
+  .section {
+    padding: 40px 0;
+  }
+  .section-head h2 {
+    font-size: 21px;
+  }
+  .grid-3,
+  .grid-2,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .compare {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .article-block,
+  .side-box {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>你好玉米 · 关于玉米的知识与生活指南</span>
+    <span>品种辨别 · 挑选保存 · 家常做法 · 营养常识</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">玉</div>
+      <div class="brand-text">
+        <b>你好玉米</b>
+        <small>认识玉米 · 吃好玉米</small>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#variety" class="active">品种分类</a></li>
+        <li><a href="#choose">挑选保存</a></li>
+        <li><a href="#cook">家常做法</a></li>
+        <li><a href="#nutrition">营养常识</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1>你好玉米：从<em>挑一根好玉米</em>开始了解它</h1>
+        <p class="hero-lead">
+          玉米是餐桌上很常见的一种食材，但甜玉米和糯玉米有什么区别、买回来怎么挑、煮多久才好吃、吃不完怎么保存，
+          这些问题往往比想象中更具体。你好玉米把这些日常会遇到的问题整理在一起，用简单清楚的方式讲明白。
+        </p>
+        <div class="hero-tags">
+          <span>甜玉米</span>
+          <span>糯玉米</span>
+          <span>水果玉米</span>
+          <span>玉米须</span>
+          <span>玉米保存</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#variety" class="btn btn-primary">先看品种分类</a>
+          <a href="#cook" class="btn btn-ghost">直接学做法</a>
+        </div>
+      </div>
+      <aside class="hero-visual" aria-label="快速要点">
+        <h3>关于玉米的四个基础认知</h3>
+        <ul class="kernel-list">
+          <li><span class="kernel-dot">1</span><span>玉米按口感大致分为甜玉米、糯玉米和普通玉米，用途并不相同。</span></li>
+          <li><span class="kernel-dot">2</span><span>新鲜玉米的外层苞叶、玉米须状态，是判断新鲜度的直观依据。</span></li>
+          <li><span class="kernel-dot">3</span><span>玉米既可以当主食的一部分，也可以作为配菜、汤料或零食原料。</span></li>
+          <li><span class="kernel-dot">4</span><span>玉米的保存方式取决于你打算多久吃完，冷藏和冷冻适合不同场景。</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 品种分类 -->
+  <section class="section" id="variety">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">VARIETY</span>
+        <h2>玉米品种分类：先弄清楚你买的是哪一种</h2>
+        <p>同样是玉米，口感、吃法和适合的烹饪方式差别很大。了解品种，是挑选和做菜的第一步。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="tag">甜度高</span>
+          <h3>甜玉米</h3>
+          <p>颗粒饱满、汁水多，咬下去有明显甜味，适合直接水煮、清炒或做沙拉。甜玉米的甜味来自籽粒中积累的糖分，
+             采摘后放置时间越久，甜味下降越明显，所以越新鲜越好。</p>
+        </article>
+        <article class="card">
+          <span class="tag">口感黏</span>
+          <h3>糯玉米</h3>
+          <p>籽粒中支链淀粉比例高，煮熟后口感软糯、有嚼劲，饱腹感更强。糯玉米适合水煮、蒸制，也常被用来做玉米糊、
+             玉米饼等加工食品，甜味通常不如甜玉米明显。</p>
+        </article>
+        <article class="card">
+          <span class="tag">清甜爽脆</span>
+          <h3>水果玉米</h3>
+          <p>可以生吃或轻煮，皮薄汁多、口感清脆，甜度普遍较高。它更适合凉拌、做沙拉，或者作为孩子的加餐。
+             购买时要注意是否标注了可生食，未标注的建议煮熟再吃。</p>
+        </article>
+        <article class="card">
+          <span class="tag">日常主食</span>
+          <h3>普通玉米（马齿型等）</h3>
+          <p>淀粉含量较高，口感偏硬实，多用于磨粉、做玉米面制品或作为饲料原料。家庭烹饪中较少直接水煮食用，
+             但玉米面、玉米糁在杂粮主食里很常见。</p>
+        </article>
+        <article class="card">
+          <span class="tag">颜色特别</span>
+          <h3>紫玉米与花玉米</h3>
+          <p>籽粒呈现紫色、黑紫色或混合花色，颜色主要来自天然色素。口感可能偏糯或偏甜，因品种而异，
+             烹饪方式可以参照同口感的普通玉米处理。</p>
+        </article>
+        <article class="card">
+          <span class="tag">加工原料</span>
+          <h3>爆裂玉米</h3>
+          <p>籽粒小而坚硬，外壳受热后能爆开，是家庭自制爆米花的常用原料。它不适合直接水煮食用，
+             选购时认准“爆裂玉米”或“爆米花专用玉米”字样。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品种对比表 -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">COMPARE</span>
+        <h2>甜玉米、糯玉米、水果玉米对比</h2>
+        <p>把常见的三种玉米放在一起比较，更容易按自己的口味和用途做选择。</p>
+      </div>
+      <table class="compare">
+        <caption>下表为一般情况下的口感与用途参考，具体因品种和产地而有所不同。</caption>
+        <thead>
+          <tr>
+            <th>对比项</th>
+            <th>甜玉米</th>
+            <th>糯玉米</th>
+            <th>水果玉米</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>主要口感</td>
+            <td>清甜多汁</td>
+            <td>软糯有嚼劲</td>
+            <td>清脆爽口</td>
+          </tr>
+          <tr>
+            <td>甜度感受</td>
+            <td>较明显</td>
+            <td>偏淡</td>
+            <td>较明显</td>
+          </tr>
+          <tr>
+            <td>常见吃法</td>
+            <td>水煮、清炒、沙拉</td>
+            <td>水煮、蒸、做饼</td>
+            <td>生食、凉拌、沙拉</td>
+          </tr>
+          <tr>
+            <td>饱腹感</td>
+            <td>中等</td>
+            <td>较强</td>
+            <td>偏弱</td>
+          </tr>
+          <tr>
+            <td>适合人群</td>
+            <td>喜欢清甜口味的人</td>
+            <td>喜欢软糯口感的人</td>
+            <td>想当清爽加餐的人</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 挑选与保存 -->
+  <section class="section" id="choose">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">CHOOSE &amp; KEEP</span>
+        <h2>怎么挑到新鲜玉米，买回来又该怎么放</h2>
+        <p>玉米的新鲜度对口感影响很大，挑选和保存做好，后面做菜会轻松很多。</p>
+      </div>
+      <div class="split">
+        <div class="article-block">
+          <h3>挑选时可以先看这几处</h3>
+          <p>带皮玉米比剥好的玉米更容易判断新鲜度，建议优先选择还包裹着苞叶的玉米。</p>
+          <ul>
+            <li><b>看苞叶：</b>外层叶片青绿、包裹紧实、没有明显干枯发黄，通常比较新鲜。</li>
+            <li><b>看玉米须：</b>须呈浅褐色或微黄、略带湿润感为佳；发黑、干枯、发霉的不建议选。</li>
+            <li><b>看籽粒：</b>剥开一角观察，籽粒饱满整齐、排列紧密、表面有光泽，说明水分较足。</li>
+            <li><b>按压感受：</b>轻轻按压籽粒，有弹性、能回弹的更新鲜；凹陷发软说明放置时间偏长。</li>
+            <li><b>闻气味：</b>应有淡淡清香，若有酸味、酒味或霉味，说明已经变质。</li>
+          </ul>
+          <h3 style="margin-top:24px;">买多了怎么办</h3>
+          <p>玉米采摘后糖分会逐渐转化，放置时间越长，甜度和水分下降越明显。如果一次买得比较多，
+             可以根据计划食用的时间选择不同处理方式。</p>
+          <ul>
+            <li>一两天内吃完：保留苞叶，装入保鲜袋放冷藏室，能减缓水分流失。</li>
+            <li>一周左右吃完：可以先煮熟，冷却后沥干水分，再密封冷藏。</li>
+            <li>更长时间保存：煮熟后剥粒或整根密封冷冻，食用前再加热。</li>
+          </ul>
+        </div>
+        <aside>
+          <div class="side-box">
+            <h3>保存小提醒</h3>
+            <ul class="side-list">
+              <li><b>不要长时间泡水</b>剥好的玉米长时间浸泡会流失部分水溶性营养，也会影响口感。</li>
+              <li><b>冷藏也要密封</b>直接裸露放在冰箱里容易串味，也会加速失水变干。</li>
+              <li><b>冷冻前先沥干</b>表面带水直接冷冻容易结霜，解冻后口感偏软。</li>
+              <li><b>按量分装</b>分成一次能吃完的小份，避免反复解冻。</li>
+            </ul>
+          </div>
+          <div class="side-box">
+            <h3>玉米须也别急着丢</h3>
+            <p style="font-size:14.5px;color:var(--text-soft);">
+              新鲜玉米的玉米须在民间常被用来煮水饮用。它属于普通食材的一部分，
+              可以洗净后与玉米一同煮，但要注意清洗干净，也不建议以此代替日常饮水或任何医学建议。
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 做法 -->
+  <section class="section section-alt" id="cook">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">COOKING</span>
+        <h2>家常玉米做法：从最简单的煮玉米开始</h2>
+        <p>玉米的做法并不复杂，掌握几个关键点，就能把口感和味道稳定下来。</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <div class="step-no">1</div>
+          <h3>水煮玉米</h3>
+          <p>最省事也最不容易出错的做法，适合甜玉米和糯玉米。</p>
+          <ul>
+            <li>保留一两层内层苞叶，冲洗干净。</li>
+            <li>冷水下锅，水量没过玉米。</li>
+            <li>水开后煮约 8 到 15 分钟，糯玉米可适当延长。</li>
+            <li>关火后不要久泡，捞出沥干即可。</li>
+          </ul>
+        </article>
+        <article class="step">
+          <div class="step-no">2</div>
+          <h3>玉米排骨汤</h3>
+          <p>玉米的甜味能融入汤中，是很常见的家常汤品搭配。</p>
+          <ul>
+            <li>排骨焯水去浮沫，玉米切段。</li>
+            <li>加姜片和足量清水，大火烧开后转小火。</li>
+            <li>炖煮约 40 分钟至 1 小时。</li>
+            <li>出锅前再放盐，避免影响肉质口感。</li>
+          </ul>
+        </article>
+        <article class="step">
+          <div class="step-no">3</div>
+          <h3>玉米烙与玉米饼</h3>
+          <p>把玉米粒做成主食或点心，适合消耗冷冻玉米粒。</p>
+          <ul>
+            <li>玉米粒沥干水分，拌入适量淀粉或面粉。</li>
+            <li>平底锅放少量油，摊成薄饼。</li>
+            <li>小火煎至两面金黄。</li>
+            <li>喜欢甜口可少量加糖，咸口可加葱花和盐。</li>
+          </ul>
+        </article>
+        <article class="step">
+          <div class="step-no">4</div>
+          <h3>玉米沙拉</h3>
+          <p>适合水果玉米或甜玉米，清爽省时。</p>
+          <ul>
+            <li>玉米粒焯水后过凉，沥干。</li>
+            <li>搭配黄瓜、番茄、鸡蛋等常见食材。</li>
+            <li>用少量橄榄油、盐和黑胡椒调味。</li>
+            <li>现拌现吃，口感更好。</li>
+          </ul>
+        </article>
+        <article class="step">
+          <div class="step-no">5</div>
+          <h3>玉米糊与玉米粥</h3>
+          <p>用玉米面或玉米糁制作，适合作为早餐主食的一部分。</p>
+          <ul>
+            <li>玉米面先用少量凉水调开，避免结块。</li>
+            <li>锅中水烧开后缓慢倒入并搅拌。</li>
+            <li>小火煮至浓稠，期间持续搅动。</li>
+            <li>可搭配小米、南瓜等一起煮。</li>
+          </ul>
+        </article>
+        <article class="step">
+          <div class="step-no">6</div>
+          <h3>自制爆米花</h3>
+          <p>使用爆裂玉米，在家也能做出简单的零食。</p>
+          <ul>
+            <li>选用标注为爆裂玉米的干籽粒。</li>
+            <li>锅中放少量油，加入玉米粒后盖盖。</li>
+            <li>中小火加热，听到爆裂声后轻轻晃动锅体。</li>
+            <li>声音变稀疏时关火，按口味加少量糖或盐。</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 营养常识 -->
+  <section class="section" id="nutrition">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">NUTRITION</span>
+        <h2>玉米的营养常识与食用注意</h2>
+        <p>玉米是常见的谷物类食材，把它放进日常饮食结构里理解，比单独强调某一点更有意义。</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>玉米能提供什么</h3>
+          <p>玉米含有淀粉、膳食纤维以及一定量的蛋白质和多种维生素、矿物质。不同品种在糖分、淀粉比例上有所差异，
+             因此口感和饱腹感也不同。作为主食的一部分或配菜，玉米可以帮助丰富日常饮食的种类。</p>
+        </article>
+        <article class="card">
+          <h3>把玉米当主食要注意什么</h3>
+          <p>玉米可以作为主食的补充，但不宜长期单一食用。日常饮食中更稳妥的做法是与米、面、杂粮等搭配，
+             同时保证蔬菜、蛋白质类食物的摄入，让整体结构更均衡。</p>
+        </article>
+        <article class="card">
+          <h3>哪些人需要留意</h3>
+          <p>如果对玉米或相关谷物存在过敏或不耐受情况，应避免食用。消化功能较弱的人，一次吃太多糯玉米可能感到腹胀，
+             可以适当控制食用量，并注意细嚼慢咽。</p>
+        </article>
+        <article class="card">
+          <h3>关于玉米须水等说法</h3>
+          <p>网络上关于玉米须、玉米水的说法很多，其中不少缺乏明确依据。把玉米当作普通食材正常食用即可，
+             如果身体有具体不适或健康问题，应咨询专业医疗人员，而不是依赖某一种食物。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>关于玉米的常见问题</h2>
+        <p>整理了一些在挑选、烹饪和保存玉米时经常被问到的问题。</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>甜玉米和糯玉米哪个更健康？</h3>
+          <p>两者都是普通食材，谈不上谁绝对更健康，主要差别在口感和成分比例上。甜玉米糖分相对高一些，
+             糯玉米淀粉结构不同、饱腹感更强。选择哪一种，更多取决于你的口味偏好和当餐的搭配需要。</p>
+        </article>
+        <article class="faq-item">
+          <h3>玉米煮多久比较合适？</h3>
+          <p>一般水开后煮 8 到 15 分钟即可，甜玉米和水果玉米时间可以短一些，糯玉米可以适当延长。
+             具体时间与玉米大小、品种以及是否带皮有关，可以用筷子轻戳籽粒判断软硬程度。</p>
+        </article>
+        <article class="faq-item">
+          <h3>玉米可以生吃吗？</h3>
+          <p>部分水果玉米品种在成熟度合适时可以生食，但并非所有玉米都适合。如果包装或售卖信息中没有注明可生食，
+             建议煮熟后再吃，这样更稳妥。</p>
+        </article>
+        <article class="faq-item">
+          <h3>冷冻玉米粒需要解冻吗？</h3>
+          <p>看用途。做汤、炒菜时可以直接下锅，加热过程中自然会化开；做沙拉或凉拌，建议提前取出解冻并沥干水分，
+             避免影响口感。</p>
+        </article>
+        <article class="faq-item">
+          <h3>玉米发霉了还能吃吗？</h3>
+          <p>不建议食用。玉米受潮发霉后可能产生对人体不利的物质，且不一定能通过加热完全去除。
+             发现霉变应整根丢弃，不要只削去发霉部分后继续食用。</p>
+        </article>
+        <article class="faq-item">
+          <h3>玉米皮和玉米须有什么用？</h3>
+          <p>玉米皮和玉米须属于玉米的组成部分。玉米须可以洗净后与玉米一同煮制，玉米皮一般作为包裹材料使用。
+             这些都属于日常烹饪中的常见处理方式，不需要赋予过多的额外功效。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>你好玉米</h4>
+        <p>一个围绕玉米展开的知识与生活指南站点，内容涵盖品种分类、挑选保存、家常做法和营养常识，
+           帮助你在日常饮食中更清楚地认识和使用玉米。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#variety">品种分类</a></li>
+          <li><a href="#choose">挑选与保存</a></li>
+          <li><a href="#cook">家常做法</a></li>
+          <li><a href="#nutrition">营养常识</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>常见问题</h4>
+        <ul>
+          <li><a href="#faq">甜玉米与糯玉米区别</a></li>
+          <li><a href="#faq">玉米煮多久合适</a></li>
+          <li><a href="#faq">玉米能否生吃</a></li>
+          <li><a href="#faq">玉米发霉怎么处理</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用说明</h4>
+        <ul>
+          <li><a href="#variety">按口感选玉米</a></li>
+          <li><a href="#choose">按时间定保存方式</a></li>
+          <li><a href="#cook">按场景选做法</a></li>
+          <li><a href="#nutrition">均衡搭配饮食</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>你好玉米 · 玉米知识与家常做法整理</span>
+      <span>内容仅供参考，具体食用请结合个人情况判断</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+                </html>
