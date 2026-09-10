@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>麻衣的日常-作品介绍、角色看点与观看阅读指南</title>
+<meta name="description" content="麻衣的日常是一部以普通女孩麻衣为主角的日常向作品，本页介绍其故事主题、角色魅力、篇章看点、适合人群以及观看与阅读的入门建议，帮助你快速了解并找到合适的欣赏方式。">
+<meta name="keywords" content="麻衣的日常,日常向作品,校园日常,治愈系动漫,角色介绍,观看指南">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --cream:#fdf7ef;
+    --paper:#ffffff;
+    --ink:#3a3330;
+    --ink-soft:#6d635d;
+    --rose:#e08a86;
+    --rose-deep:#c96a67;
+    --sky:#8fb8d6;
+    --mint:#a8cdbb;
+    --sun:#f0c987;
+    --line:#efe3d6;
+    --shadow:0 10px 30px rgba(160,130,110,.12);
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px;}
+
+  /* Header */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(253,247,239,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:14px 0;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:44px;height:44px;border-radius:14px;
+    background:linear-gradient(135deg,var(--rose),var(--sun));
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:700;font-size:18px;letter-spacing:1px;
+    box-shadow:0 6px 16px rgba(224,138,134,.35);
+  }
+  .brand-text b{display:block;font-size:17px;letter-spacing:.5px;}
+  .brand-text span{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:2px;}
+
+  .main-nav{display:flex;gap:6px;flex-wrap:wrap;}
+  .main-nav a{
+    font-size:14px;color:var(--ink-soft);
+    padding:8px 14px;border-radius:999px;
+    transition:.25s;
+  }
+  .main-nav a:hover{background:#fff;color:var(--rose-deep);box-shadow:var(--shadow);}
+
+  /* Hero */
+  .hero{
+    position:relative;overflow:hidden;
+    padding:70px 0 64px;
+    background:
+      radial-gradient(circle at 12% 18%,rgba(240,201,135,.30),transparent 42%),
+      radial-gradient(circle at 88% 8%,rgba(143,184,214,.28),transparent 45%),
+      radial-gradient(circle at 70% 90%,rgba(168,205,187,.28),transparent 48%);
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;
+  }
+  .hero-tag{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--line);
+    padding:6px 14px;border-radius:999px;
+    font-size:13px;color:var(--rose-deep);
+    box-shadow:var(--shadow);
+  }
+  .hero-tag i{width:7px;height:7px;border-radius:50%;background:var(--rose);display:block;}
+  .hero h1{
+    font-size:clamp(28px,4.4vw,46px);
+    line-height:1.35;margin:20px 0 18px;
+    letter-spacing:1px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(120deg,var(--rose-deep),var(--sun));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lead{font-size:16.5px;color:var(--ink-soft);max-width:600px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 26px;border-radius:999px;font-size:15px;
+    transition:.25s;border:1px solid transparent;cursor:pointer;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--rose),var(--rose-deep));
+    color:#fff;box-shadow:0 10px 24px rgba(201,106,103,.32);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(201,106,103,.4);}
+  .btn-ghost{background:#fff;border-color:var(--line);color:var(--ink-soft);}
+  .btn-ghost:hover{border-color:var(--rose);color:var(--rose-deep);}
+
+  .hero-card{
+    background:var(--paper);border-radius:26px;
+    padding:26px;box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+  .hero-card h3{font-size:16px;margin-bottom:16px;letter-spacing:1px;}
+  .hero-card h3 span{color:var(--rose-deep);}
+  .mini-list{list-style:none;display:grid;gap:12px;}
+  .mini-list li{
+    display:flex;gap:12px;align-items:flex-start;
+    font-size:14px;color:var(--ink-soft);
+    padding-bottom:12px;border-bottom:1px dashed var(--line);
+  }
+  .mini-list li:last-child{border-bottom:none;padding-bottom:0;}
+  .dot{
+    flex:0 0 auto;width:26px;height:26px;border-radius:9px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:12px;color:#fff;font-weight:600;
+  }
+  .dot.r{background:var(--rose);}
+  .dot.b{background:var(--sky);}
+  .dot.g{background:var(--mint);}
+  .dot.y{background:var(--sun);}
+
+  /* Section base */
+  section{padding:64px 0;}
+  .sec-head{margin-bottom:34px;max-width:720px;}
+  .sec-head .kicker{
+    font-size:13px;letter-spacing:3px;color:var(--rose-deep);
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .sec-head h2{font-size:clamp(22px,3vw,30px);letter-spacing:.5px;}
+  .sec-head p{margin-top:12px;color:var(--ink-soft);font-size:15.5px;}
+
+  /* About */
+  .about-grid{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start;
+  }
+  .about-text p{margin-bottom:16px;color:var(--ink-soft);font-size:15.5px;}
+  .about-text p strong{color:var(--ink);}
+  .fact-box{
+    background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);
+  }
+  .fact-box h3{font-size:16px;margin-bottom:18px;}
+  .fact-row{
+    display:flex;justify-content:space-between;gap:14px;
+    font-size:14px;padding:11px 0;border-bottom:1px dashed var(--line);
+  }
+  .fact-row:last-child{border-bottom:none;}
+  .fact-row span:first-child{color:var(--ink-soft);}
+  .fact-row span:last-child{color:var(--ink);font-weight:600;text-align:right;}
+
+  /* Character */
+  .char-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .char-card{
+    background:var(--paper);border-radius:var(--radius);
+    padding:26px 22px;border:1px solid var(--line);
+    box-shadow:var(--shadow);transition:.28s;
+  }
+  .char-card:hover{transform:translateY(-6px);}
+  .char-avatar{
+    width:56px;height:56px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;font-weight:700;color:#fff;margin-bottom:16px;
+  }
+  .av-1{background:linear-gradient(135deg,#e08a86,#f0a8a4);}
+  .av-2{background:linear-gradient(135deg,#8fb8d6,#b4d3e8);}
+  .av-3{background:linear-gradient(135deg,#a8cdbb,#c6e0d3);}
+  .char-card h3{font-size:17px;margin-bottom:6px;}
+  .char-card .role{font-size:12.5px;color:var(--rose-deep);letter-spacing:1px;margin-bottom:12px;}
+  .char-card p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* Chapters / highlights */
+  .highlight-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .chapter-list{display:grid;gap:16px;}
+  .chapter{
+    display:grid;grid-template-columns:88px 1fr;gap:22px;
+    background:var(--cream);border-radius:var(--radius);
+    padding:22px 24px;border:1px solid var(--line);
+    transition:.25s;
+  }
+  .chapter:hover{background:#fff;box-shadow:var(--shadow);}
+  .chapter .no{
+    font-size:26px;font-weight:800;color:var(--sun);
+    line-height:1;letter-spacing:-1px;
+  }
+  .chapter h3{font-size:16.5px;margin-bottom:8px;}
+  .chapter p{font-size:14.5px;color:var(--ink-soft);}
+  .tagline{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+  .tagline span{
+    font-size:12px;padding:3px 10px;border-radius:999px;
+    background:#fff;border:1px solid var(--line);color:var(--ink-soft);
+  }
+
+  /* Why */
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .why-item{
+    background:var(--paper);border-radius:var(--radius);
+    padding:24px;border:1px solid var(--line);
+    display:flex;gap:16px;align-items:flex-start;
+  }
+  .why-icon{
+    flex:0 0 auto;width:42px;height:42px;border-radius:13px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;background:var(--cream);border:1px solid var(--line);
+  }
+  .why-item h3{font-size:16px;margin-bottom:8px;}
+  .why-item p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* Guide */
+  .guide{background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);}
+  .guide-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step;}
+  .step{
+    background:var(--paper);border-radius:var(--radius);
+    padding:26px 22px;border:1px solid var(--line);
+    position:relative;box-shadow:var(--shadow);
+  }
+  .step::before{
+    counter-increment:step;content:"0" counter(step);
+    font-size:34px;font-weight:800;color:rgba(224,138,134,.28);
+    display:block;margin-bottom:10px;line-height:1;
+  }
+  .step h3{font-size:16px;margin-bottom:10px;}
+  .step p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* FAQ */
+  .faq-list{display:grid;gap:14px;max-width:880px;}
+  details{
+    background:var(--paper);border:1px solid var(--line);
+    border-radius:14px;padding:18px 22px;transition:.25s;
+  }
+  details[open]{box-shadow:var(--shadow);border-color:#e7d5c4;}
+  summary{
+    cursor:pointer;font-size:15.5px;font-weight:600;
+    list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"+";font-size:20px;color:var(--rose);
+    flex:0 0 auto;transition:.25s;font-weight:400;
+  }
+  details[open] summary::after{transform:rotate(45deg);}
+  details p{margin-top:14px;font-size:14.5px;color:var(--ink-soft);}
+
+  /* Footer */
+  .site-footer{
+    background:#3a3330;color:#d9cfc7;
+    padding:52px 0 26px;margin-top:20px;
+  }
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;}
+  .site-footer h4{color:#fff;font-size:15px;margin-bottom:16px;letter-spacing:1px;}
+  .site-footer p{font-size:13.5px;color:#a99e96;line-height:1.9;}
+  .footer-links{list-style:none;display:grid;gap:10px;}
+  .footer-links a{font-size:13.5px;color:#a99e96;transition:.2s;}
+  .footer-links a:hover{color:var(--sun);}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    margin-top:36px;padding-top:20px;
+    font-size:12.5px;color:#8b817a;text-align:center;
+  }
+
+  /* Responsive */
+  @media (max-width:960px){
+    .hero-grid,.about-grid{grid-template-columns:1fr;gap:32px;}
+    .char-grid,.guide-steps{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    section{padding:46px 0;}
+    .hero{padding:48px 0 44px;}
+    .header-inner{flex-direction:column;align-items:flex-start;gap:12px;}
+    .main-nav a{padding:6px 10px;font-size:13px;}
+    .char-grid,.guide-steps,.why-grid{grid-template-columns:1fr;}
+    .chapter{grid-template-columns:1fr;gap:10px;}
+    .chapter .no{font-size:22px;}
+    .footer-grid{grid-template-columns:1fr;gap:26px;}
+    .btn{padding:11px 20px;font-size:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">麻衣</div>
+      <div class="brand-text">
+        <b>麻衣的日常</b>
+        <span>MAI'S DAILY LIFE</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#about">作品简介</a>
+      <a href="#characters">角色看点</a>
+      <a href="#chapters">篇章主题</a>
+      <a href="#why">为什么好看</a>
+      <a href="#guide">入门指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-tag"><i></i>日常向 · 校园 · 治愈生活</div>
+        <h1>麻衣的日常：<em>把平凡的日子，过成值得回味的小故事</em></h1>
+        <p class="lead">
+          《麻衣的日常》以一位普通女孩麻衣的生活为中心，把上学、放学、朋友相处、家人对话这些看似平常的片段串成一条温暖的时间线。如果你正在搜索这部作品，想了解它讲什么、看点在哪、从哪里开始看比较合适，这一页会把关键信息一次讲清楚。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">了解作品内容</a>
+          <a class="btn btn-ghost" href="#guide">查看入门建议</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h3>快速了解 <span>麻衣的日常</span></h3>
+        <ul class="mini-list">
+          <li><span class="dot r">01</span><div>题材定位：以日常生活为主线的轻松治愈向作品，节奏舒缓，情绪温和。</div></li>
+          <li><span class="dot b">02</span><div>核心人物：围绕麻衣本人以及她身边的朋友、家人、同学展开。</div></li>
+          <li><span class="dot g">03</span><div>阅读体验：单篇之间关联不强，适合碎片时间随时进入。</div></li>
+          <li><span class="dot y">04</span><div>适合人群：喜欢慢节奏、生活细节和温暖氛围的读者与观众。</div></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">About</div>
+        <h2>麻衣的日常讲了什么</h2>
+        <p>与其说它有一个明确的目标或结局，不如说它更像一本被翻阅的生活手账，记录一个女孩成长过程中的细微变化。</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            <strong>麻衣的日常</strong>的核心并不在于激烈的冲突或戏剧化的转折，而在于把注意力放回到生活本身。故事里的麻衣会为第二天的考试发愁，会因为一句无心的话和朋友闹别扭，也会在某个普通的傍晚因为一碗热汤而觉得日子不错。这些内容看起来零散，却共同构成了一个真实可感的成长轨迹。
+          </p>
+          <p>
+            这类日常向作品最打动人的地方，是它不急着给出答案。麻衣遇到的困惑往往不会在一话之内被彻底解决，而是随着时间慢慢被消化。观众或读者在跟随她生活的过程中，也会不自觉地把自己的经历代入进去，这正是一部分人反复回看的原因。
+          </p>
+          <p>
+            如果你之前没有接触过日常向作品，可能会觉得“没有主线会不会很无聊”。实际上，麻衣的日常依靠的是<strong>情绪的真实、细节的准确和人物关系的自然</strong>。它不靠悬念留住你，而是靠一种“这就是生活”的熟悉感留住你。
+          </p>
+          <p>
+            在欣赏顺序上，这类作品通常没有严格的先后限制。你可以按发布顺序从头开始，也可以挑自己感兴趣的篇章切入，之后再回头补完其他部分，体验上不会有太大障碍。
+          </p>
+        </div>
+
+        <aside class="fact-box">
+          <h3>作品信息速览</h3>
+          <div class="fact-row"><span>作品名称</span><span>麻衣的日常</span></div>
+          <div class="fact-row"><span>题材类型</span><span>日常 / 校园 / 治愈</span></div>
+          <div class="fact-row"><span>叙事节奏</span><span>舒缓、单元式</span></div>
+          <div class="fact-row"><span>情绪基调</span><span>温暖、轻松、偶有感慨</span></div>
+          <div class="fact-row"><span>阅读门槛</span><span>低，可随时进入</span></div>
+          <div class="fact-row"><span>推荐场景</span><span>睡前、通勤、休息间隙</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Characters -->
+  <section id="characters" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Characters</div>
+        <h2>角色看点：麻衣身边的人，才是日常的底色</h2>
+        <p>日常向作品很少靠单一主角撑起全部内容，麻衣的日常同样如此。她与身边人的互动，构成了故事最主要的情绪来源。</p>
+      </div>
+
+      <div class="char-grid">
+        <article class="char-card">
+          <div class="char-avatar av-1">麻</div>
+          <h3>麻衣</h3>
+          <div class="role">主角 · 普通女孩</div>
+          <p>
+            麻衣不是那种自带光环的角色。她会偷懒、会犹豫、会因为小事开心很久，也会在关键时刻展现出让人意外的认真。正是这种不完美，让她显得格外可信，也让读者更容易在她身上看到自己。
+          </p>
+        </article>
+
+        <article class="char-card">
+          <div class="char-avatar av-2">友</div>
+          <h3>身边的朋友</h3>
+          <div class="role">同伴 · 日常互动核心</div>
+          <p>
+            朋友是麻衣日常中最重要的变量。她们之间的相处既有默契，也有摩擦。作品没有刻意美化友情，而是把“理解需要时间”这件事自然地呈现出来，让关系显得更有分量。
+          </p>
+        </article>
+
+        <article class="char-card">
+          <div class="char-avatar av-3">家</div>
+          <h3>家人与生活场景</h3>
+          <div class="role">背景 · 情绪支撑</div>
+          <p>
+            家里的餐桌、放学路上的街角、常去的小店，这些场景虽然不抢戏，却为整部作品提供了稳定的情绪底座。麻衣的很多改变，都是在这些安静的时刻悄悄发生的。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapters -->
+  <section id="chapters" class="highlight-band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Themes</div>
+        <h2>篇章主题：日常里的几种情绪</h2>
+        <p>虽然每一话看起来都是独立的小故事，但它们大致可以归入几类反复出现的主题。了解这些主题，能帮助你更快找到自己喜欢的部分。</p>
+      </div>
+
+      <div class="chapter-list">
+        <article class="chapter">
+          <div class="no">01</div>
+          <div>
+            <h3>校园与成长</h3>
+            <p>
+              考试、社团、同学之间的相处，是麻衣日常中最常见的场景。作品没有把校园生活理想化，而是如实呈现其中的紧张、尴尬和小小成就感。麻衣在这些场景中的反应，往往比事件本身更有看点。
+            </p>
+            <div class="tagline">
+              <span>考试压力</span><span>同学关系</span><span>自我怀疑</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter">
+          <div class="no">02</div>
+          <div>
+            <h3>友情与距离感</h3>
+            <p>
+              友情在麻衣的日常里不是一成不变的。有时候靠得很近，有时候又会因为误会而疏远。作品愿意花时间去描写这种反复，让关系显得真实，也让和解的时刻更有说服力。
+            </p>
+            <div class="tagline">
+              <span>误会</span><span>和解</span><span>陪伴</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter">
+          <div class="no">03</div>
+          <div>
+            <h3>独处与自我对话</h3>
+            <p>
+              麻衣并不总是被朋友包围，她也有很多一个人待着的时刻。发呆、散步、整理房间，这些看似安静的片段，其实是角色内心变化最集中的地方，也是整部作品最容易被忽略却最耐看的部分。
+            </p>
+            <div class="tagline">
+              <span>独处</span><span>思考</span><span>情绪整理</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter">
+          <div class="no">04</div>
+          <div>
+            <h3>季节与生活感</h3>
+            <p>
+              季节变化常常被用来标记时间的流逝。天气、食物、衣着这些细节，让麻衣的日常有了具体的时间坐标。正是这些不起眼的描写，让整部作品读起来有一种“日子真的在往前走”的实感。
+            </p>
+            <div class="tagline">
+              <span>季节流转</span><span>生活细节</span><span>时间感</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Why Watch</div>
+        <h2>为什么值得花时间看麻衣的日常</h2>
+        <p>日常向作品的价值往往不在“刺激”，而在“陪伴”。以下几点，是它比较突出的地方。</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">🌿</div>
+          <div>
+            <h3>情绪负担低</h3>
+            <p>不需要记住复杂的设定，也不用担心错过关键伏笔。任何一话单独拿出来看都不会有理解障碍，非常适合放松时观看或阅读。</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon">🫖</div>
+          <div>
+            <h3>细节贴近生活</h3>
+            <p>作品对日常场景的描写比较克制，不会过度煽情。很多触动来自于“我也经历过类似的事”这种共鸣，而不是刻意制造的泪点。</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon">🌤️</div>
+          <div>
+            <h3>适合反复回看</h3>
+            <p>因为不依赖悬念，麻衣的日常在重看时依然成立。随着自己经历的变化，同一话内容可能会带来完全不同的感受。</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon">📖</div>
+          <div>
+            <h3>节奏自由</h3>
+            <p>可以一次看很多话，也可以每天只看一小段。作品本身不催促你，这种自由度是它区别于强剧情作品的重要特点。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide -->
+  <section id="guide" class="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Getting Started</div>
+        <h2>入门指南：怎么开始看麻衣的日常</h2>
+        <p>如果你已经决定尝试这部作品，下面几个步骤可以让体验更顺畅。</p>
+      </div>
+
+      <div class="guide-steps">
+        <article class="step">
+          <h3>先看一两话感受节奏</h3>
+          <p>不用急着从头看到尾。先挑一到两话，感受一下作品的节奏和氛围是否合自己的口味。日常向作品的适配度，往往在前几话就能判断出来。</p>
+        </article>
+
+        <article class="step">
+          <h3>按心情选择篇章</h3>
+          <p>想放松时可以看轻松的校园日常，想安静一点时可以看独处相关的片段。麻衣的日常不要求线性观看，按心情挑选反而更容易投入。</p>
+        </article>
+
+        <article class="step">
+          <h3>给自己留出回味时间</h3>
+          <p>看完之后不必马上接着看下一话。让情绪停留一会儿，想一想自己有没有类似的经历，往往能获得比连续观看更深的体验。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:#fff;border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">FAQ</div>
+        <h2>关于麻衣的日常，常见问题</h2>
+        <p>以下问题来自搜索和讨论中比较常见的疑问，供你参考。</p>
+      </div>
+
+      <div class="faq-list">
+        <details open>
+          <summary>麻衣的日常适合什么年龄段的人看？</summary>
+          <p>这类日常向作品通常没有明显的年龄限制，内容以生活片段为主，情绪温和。青少年和成年人都可以观看或阅读，只是不同年龄段的关注点可能会不一样，比如学生更容易代入校园部分，成年人则可能对独处和生活压力更有共鸣。</p>
+        </details>
+
+        <details>
+          <summary>没有看过日常向作品，能直接看麻衣的日常吗？</summary>
+          <p>可以。日常向作品一般不需要前置知识，麻衣的日常也没有复杂的设定或连续剧情。你可以直接从任意一话开始，不会因为缺少背景而看不懂。</p>
+        </details>
+
+        <details>
+          <summary>作品有明确的主线结局吗？</summary>
+          <p>日常向作品的叙事重心通常不在“结局”上，而在于过程中的情绪积累。麻衣的日常更接近单元式的结构，每一话有自己的小主题，整体上呈现的是角色慢慢变化的过程，而不是一个必须抵达的终点。具体内容建议以实际观看或阅读为准。</p>
+        </details>
+
+        <details>
+          <summary>看的时候需要按顺序吗？</summary>
+          <p>通常不需要。虽然部分细节可能存在前后呼应，但整体不影响理解。如果你想获得更完整的体验，可以按发布顺序观看；如果只是想放松，按兴趣挑选也完全可以。</p>
+        </details>
+
+        <details>
+          <summary>为什么这类日常作品会让人反复回看？</summary>
+          <p>一方面是因为它不依赖悬念，重看时不会有“已经知道结局所以无聊”的问题；另一方面是因为生活类内容会随着观众自身经历的变化而产生新的意义。同一段情节，在不同阶段看可能会有完全不同的感受。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>麻衣的日常</h4>
+        <p>
+          一个关于普通女孩生活片段的主题页面，整理作品的内容方向、角色看点、篇章主题与入门建议，帮助喜欢日常向作品的读者和观众更快了解它的风格与适合的欣赏方式。
+        </p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul class="footer-links">
+          <li><a href="#about">作品简介</a></li>
+          <li><a href="#characters">角色看点</a></li>
+          <li><a href="#chapters">篇章主题</a></li>
+          <li><a href="#why">作品亮点</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读帮助</h4>
+        <ul class="footer-links">
+          <li><a href="#guide">入门指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#about">适合人群</a></li>
+          <li><a href="#chapters">情绪主题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 麻衣的日常 · 本页为作品主题介绍与观看阅读参考内容
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.main-nav a').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var target = document.querySelector(this.getAttribute('href'));
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  });
+</script>
+
+</body>
+    </html>
